@@ -7,15 +7,14 @@ var init = function () {
   // Buttons
   $('.buttonset').buttonset();
 
-  // Tabs
-  $('.tabs').tabs();
 };
 
 $(function () {
   // Menu
   $('#menu').load('menu.html', init);
 
-  // Content
-  $('#content').load('component.html', init);
+
+  // Tabs
+  $('.tabs').tabs();
 
 });
