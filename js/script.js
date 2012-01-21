@@ -6,6 +6,9 @@ var init = function () {
 
   // Buttons
   $('.buttonset').buttonset();
+
+  // Tabs
+  $('.tabs').tabs();
 };
 
 $(function () {
