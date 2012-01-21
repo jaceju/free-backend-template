@@ -1,0 +1,19 @@
+.btn
+  position: relative
+  padding-left: 22px
+
+  &:before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 4px
+    margin-top: -8px
+    width: 16px
+    height: 16px
+    background-image: url("../libs/jquery-ui/jquery-ui-theme/images/ui-icons_888888_256x240.png")
+
+  &.edit:before
+    background-position: -64px -112px
+
+  &.delete:before
+    background-position: -176px -96px
