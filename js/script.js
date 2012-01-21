@@ -1,9 +1,18 @@
-$(function () {
+var init = function () {
   // Accordion
   $('.accordion').accordion({
     header: "h3"
   });
 
   // Buttons
-  $('.button').button();
+  $('.buttonset').buttonset();
+};
+
+$(function () {
+  // Menu
+  $('#menu').load('menu.html', init);
+
+  // Content
+  $('#content').load('component.html', init);
+
 });
