@@ -1,0 +1,43 @@
+.inner-form
+
+  &>h1
+    +panel-header
+
+  &>form
+    +panel-content
+
+fieldset
+  padding: 15px
+  border: 1px solid #aaa
+  background: url(img/bg.png)
+  // +box-shadow(1px 1px 1px #ddd)
+  +border-radius(4px)
+
+  legend
+    padding: 8px 15px
+    font-size: 15px
+    font-weight: bold
+    color: #666
+    border: 1px solid #aaa
+    background: url(img/bg.png) #eee
+    +border-radius(4px)
+    +text-shadow(0 1px 0 #fff)
+
+  label
+    float: none
+    display: block
+    font-weight: bold
+    color: #666
+    line-height: 150%
+    +text-shadow(0 1px 0 #fff)
+
+.element
+  padding: 10px 0 5px 0
+  border-bottom: 1px solid #ddd
+  +box-shadow(0 1px 0 #fff)
+
+  &:last-child
+    border: none
+
+#ui-datepicker-div
+  z-index: 99 !important
