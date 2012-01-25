@@ -13,12 +13,12 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="libs/bootstrap/bootstrap.css" />
-  <link rel="stylesheet" href="libs/fileinput/enhanced.css" />
+  <link rel="stylesheet" href="libs/enhancejs/enhanced.css" />
   <link rel="stylesheet" href="libs/chosen/chosen.css" />
   <link rel="stylesheet" href="libs/daterangepicker/daterangepicker.css" />
   <link rel="stylesheet" href="css/theme/screen.css" />
   <link rel="stylesheet" href="css/screen.css" media="screen, projection" />
-  <link rel="stylesheet" href="css/custom.css" media="screen, projection" />
+  <link rel="stylesheet" href="css/style.css" media="screen, projection" />
 
 	<!--[if IE]>
   <link rel="stylesheet" type="text/css" href="libs/jquery-ui/-theme/ie.css"/>
@@ -33,9 +33,9 @@
   </header> <!-- /#header -->
 
   <div id="info">
-    <div class="user buttonset">
-      <a href="#" class="messages ui-button-primary">Jace Ju ( 3 Messages )</a>
-      <a href="#" class="logout">Logout</a>
+    <div class="user">
+      <a href="#" class="btn messages">Jace Ju ( 3 Messages )</a>
+      <a href="#" class="btn logout">Logout</a>
     </div>
   </div>
 
@@ -47,10 +47,40 @@
           <input type="text" placeholder="Quick Search" />
         </form>
       </section>
-      <section id="menu" class="accordion"></section><!-- /#menu -->
+      <section id="menu" class="accordion">
+        <h3><a href="#">Content</a></h3>
+        <ul>
+          <li><a href="#">New Article</a></li>
+          <li><a href="#">Edit Articles</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Tags</a></li>
+        </ul>
+
+        <h3><a href="#">Users</a></h3>
+        <ul>
+          <li><a href="#">Add New User</a></li>
+          <li><a href="#">View Users</a></li>
+          <li><a href="#">Your Profile</a></li>
+        </ul>
+
+        <h3><a href="#">Media</a></h3>
+        <ul>
+          <li><a href="#">File Manager</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Audio</a></li>
+          <li><a href="#">Video</a></li>
+        </ul>
+
+        <h3><a href="#">Admin</a></h3>
+        <ul>
+          <li><a href="#">Options</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </section><!-- /#menu -->
 
       <footer>
-        <p><strong>Copyright &copy; 2012 Your Company Name</strong></p>
+        <p><strong>Copyright &copy; 2012 jaceju</strong></p>
       </footer>
     </aside><!-- end of sidebar -->
 
@@ -65,10 +95,10 @@
         <!-- Start of Tabs -->
         <div id="tabs-demo" class="tabs">
           <ul>
+            <li><a href="components/table.html">Table</a></li>
             <li><a href="components/form.html">Form</a></li>
             <li><a href="components/alert-message.html">Alert Message</a></li>
             <li><a href="components/stats.html">Stats</a></li>
-            <li><a href="components/table.html">Table</a></li>
           </ul>
         </div>
         <!-- End of Tabs -->
@@ -79,12 +109,14 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="libs/jquery/1.7.1.min.js"><\/script>')</script>
   <script src="libs/jquery-ui/1.8.17.min.js"></script>
-  <script src="libs/fileinput/enhance.min.js"></script>
-  <script src="libs/fileinput/fileinput.jquery.js"></script>
-  <script src="libs/daterangepicker/daterangepicker.min.js"></script>
-  <!--
-  <script src="js/libs.js"></script>
-  -->
+  <script src="libs/enhancejs/last.min.js"></script>
+  <script src="libs/customfileinput/last.min.js"></script>
+  <script src="libs/daterangepicker/last.min.js"></script>
+  <script src="libs/chosen/last.min.js"></script>
+  <script src="libs/textext/1.2.0.min.js"></script>
+  <script src="libs/datatables/1.8.2.min.js"></script>
+  <script src="js/init.js"></script>
+
   <script src="js/script.js"></script>
 </body>
 </html>
