@@ -6,7 +6,7 @@
       button_position: "right"
     });
     $(".datepicker").datepicker();
-    $("select").css({
+    $(".chosen").css({
       width: '200px'
     }).chosen();
     $(".tags").textext({
@@ -24,15 +24,13 @@
       bRetrieve: true,
       sPaginationType: "full_numbers"
     });
-    return $("#dialog-form").dialog({
+    return $(".dialog.form").dialog({
       autoOpen: false,
       resizable: false,
       height: 600,
       width: 750,
       modal: true,
-      close: function() {
-        return allFields.val("").removeClass("ui-state-error");
-      }
+      close: function() {}
     });
   };
 
@@ -48,11 +46,11 @@
     return $('.tabs').on('click', '.edit', function(e) {
       e.preventDefault();
       $("#dialog:ui-dialog").dialog("destroy");
-      return $("#dialog-form").load("components/form.html #form-demo", init).dialog("open");
+      return $(".dialog.form").load("components/form.html #form-demo", init).dialog("open");
     }).on('click', '.delete', function(e) {
       e.preventDefault();
       $("#dialog:ui-dialog").dialog("destroy");
-      return $("#dialog-confirm").dialog({
+      return $(".dialog.confirm").dialog({
         resizable: false,
         height: 180,
         modal: true,

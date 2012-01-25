@@ -2,7 +2,7 @@ init = ->
   $("input[type=file]").customFileInput
     button_position: "right"
   $(".datepicker").datepicker()
-  $("select").css
+  $(".chosen").css
     width: '200px'
   .chosen()
   $(".tags").textext
@@ -19,14 +19,13 @@ init = ->
     bRetrieve: true
     sPaginationType: "full_numbers"
 
-  $("#dialog-form").dialog
+  $(".dialog.form").dialog
     autoOpen: false
     resizable: false
     height: 600
     width: 750
     modal: true
     close: ->
-      allFields.val("").removeClass "ui-state-error"
 
 $ ->
   $(".accordion").accordion
@@ -38,12 +37,12 @@ $ ->
   $('.tabs').on 'click', '.edit', (e) ->
     e.preventDefault()
     $("#dialog:ui-dialog").dialog "destroy"
-    $("#dialog-form").load("components/form.html #form-demo", init)
+    $(".dialog.form").load("components/form.html #form-demo", init)
     .dialog "open"
   .on 'click', '.delete', (e) ->
     e.preventDefault()
     $("#dialog:ui-dialog").dialog "destroy"
-    $("#dialog-confirm").dialog
+    $(".dialog.confirm").dialog
       resizable: false
       height: 180
       modal: true
