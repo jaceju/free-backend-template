@@ -10,7 +10,7 @@ init = ->
     tagsItems: []
     prompt: "Add one..."
     ajax:
-      url: "tags.json"
+      url: "components/tags.json"
       dataType: "json"
       cacheResults: true
 
