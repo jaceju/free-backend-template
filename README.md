@@ -16,9 +16,9 @@ You can modify these files to customize the template:
 
 You need these tools to rebuild the css and js:
 
-* [Compass](http://compass-style.org/) to build sass/*.sass.
+* [Compass](http://compass-style.org/) to compile sass/*.sass.
 
-* [CoffeeScript](http://coffeescript.org/) to build coffee/*.coffee
+* [CoffeeScript](http://coffeescript.org/) to compile coffee/*.coffee
 
 ## Dependences
 
