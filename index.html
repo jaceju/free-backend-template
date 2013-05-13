@@ -1,74 +1,122 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Free-backend-template : " />
+	<title>Free Backend Template</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="libs/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" href="libs/enhancejs/enhanced.css" />
+  <link rel="stylesheet" href="libs/chosen/chosen.css" />
+  <link rel="stylesheet" href="libs/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="css/theme/screen.css" />
+  <link rel="stylesheet" href="css/screen.css" media="screen, projection" />
+  <link rel="stylesheet" href="css/style.css" media="screen, projection" />
 
-    <title>Free-backend-template</title>
-  </head>
+	<!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="libs/jquery-ui/-theme/ie.css"/>
+  <![endif]-->
+	<script src="libs/modernizr/2.0.6.min.js"></script>
+</head>
+<body>
 
-  <body>
+  <header id="header" class="container-fluid">
+    <h1><a href="index.html">Free Backend Template</a></h1>
+    <p class="view-site"><a href="http://www.jaceju.net" class="btn">View Site</a></p>
+  </header> <!-- /#header -->
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/jaceju/free-backend-template">View on GitHub</a>
-
-          <h1 id="project_title">Free-backend-template</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/jaceju/free-backend-template/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/jaceju/free-backend-template/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+  <div id="info">
+    <div class="user">
+      <a href="#" class="btn messages">Jace Ju ( 3 Messages )</a>
+      <a href="#" class="btn logout">Logout</a>
     </div>
+  </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+  <div class="container-fluid">
+    <aside id="sidebar" class="sidebar">
+      <section id="quick-search">
+        <h1>Quick Search</h1>
+        <form>
+          <input type="text" placeholder="Quick Search" />
+        </form>
       </section>
-    </div>
+      <section id="menu" class="accordion">
+        <h3><a href="#">Content</a></h3>
+        <ul>
+          <li><a href="#">New Article</a></li>
+          <li><a href="#">Edit Articles</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Tags</a></li>
+        </ul>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Free-backend-template maintained by <a href="https://github.com/jaceju">jaceju</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+        <h3><a href="#">Users</a></h3>
+        <ul>
+          <li><a href="#">Add New User</a></li>
+          <li><a href="#">View Users</a></li>
+          <li><a href="#">Your Profile</a></li>
+        </ul>
+
+        <h3><a href="#">Media</a></h3>
+        <ul>
+          <li><a href="#">File Manager</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Audio</a></li>
+          <li><a href="#">Video</a></li>
+        </ul>
+
+        <h3><a href="#">Admin</a></h3>
+        <ul>
+          <li><a href="#">Options</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </section><!-- /#menu -->
+
+      <footer>
+        <p><strong>Copyright &copy; 2012 Your Name</strong></p>
       </footer>
-    </div>
+    </aside><!-- end of sidebar -->
 
-    
+    <section id="main" class="content">
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a> <span class="divider">/</span></li>
+        <li><a href="#">Middle page</a> <span class="divider">/</span></li>
+        <li><a href="#">Another one</a> <span class="divider">/</span></li>
+        <li class="active">You are here</li>
+      </ul>
+      <div id="content" class="well">
+        <!-- Start of Tabs -->
+        <div id="tabs-demo" class="tabs">
+          <ul>
+            <li><a href="components/table.html">Table</a></li>
+            <li><a href="components/form.html">Form</a></li>
+            <li><a href="components/alert-message.html">Alert Message</a></li>
+            <li><a href="components/stats.html">Stats</a></li>
+          </ul>
+        </div>
+        <!-- End of Tabs -->
 
-  </body>
+      </div>
+    </section>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libs/jquery/1.7.1.min.js"><\/script>')</script>
+  <script src="libs/jquery-ui/1.8.17.min.js"></script>
+  <script src="libs/enhancejs/last.min.js"></script>
+  <script src="libs/customfileinput/last.min.js"></script>
+  <script src="libs/daterangepicker/last.min.js"></script>
+  <script src="libs/chosen/last.min.js"></script>
+  <script src="libs/textext/1.2.0.min.js"></script>
+  <script src="libs/datatables/1.8.2.min.js"></script>
+  <script src="js/init.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
